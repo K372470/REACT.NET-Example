@@ -1,0 +1,44 @@
+﻿footer {
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  text-align: center;
+  background: whitesmoke;
+  border-top: 1px solid grey;
+  color: rgb(240, 169, 82);
+}
+
+body {
+  font-family: cursive;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d8/Elegant_Background-2.jpg');
+  margin: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a:hover {
+  text-shadow: 0 0 6px rgb(140, 197, 113);
+}
+
+.container {
+  background: none;
+  margin: 10px;
+  font-family: cursive;
+}
+
+.emptyModelMsg {
+  height: 40px;
+  border: 1px dashed rgb(0, 0, 200);
+  text-align: center;
+  color: blueviolet;
+}
+
+.navbar {
+  background-color: cornsilk;
+  border: 2px inset;
+}

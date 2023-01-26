@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Startup Stats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/startupStyles.css" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    @RenderSection("Head",false)
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="nav-link active" asp-controller="Home" asp-action="Index">
+                <h1>Home</h1>
+            </a>
+        </nav>
+    </header>
+    <main id="container" class="container">
+        @RenderBody()
+    </main>
+    <footer>K372470</footer>
+
+    <div id="bodyScripts">
+        @RenderSection("Scripts", required: false)
+    </div>
+</body>
+
+</html>

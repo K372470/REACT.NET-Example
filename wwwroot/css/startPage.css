@@ -1,0 +1,42 @@
+input[type=data] {
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+.form-label {
+    font-size: small;
+    color: #3a32c3;
+}
+
+.timeSelector {
+    padding: 20px;
+    border: 3px inset #d3d97d;
+    border-radius: 20px;
+}
+
+.noData {
+    border: 2px inset grey;
+    margin: 10px;
+    text-align: center;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.buttonLoader {
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+    vertical-align: bottom;
+}
+
+.chart {
+    border: 1px dotted;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.dataViewer {
+    margin-top: 20px;
+    border: 1px solid;
+}

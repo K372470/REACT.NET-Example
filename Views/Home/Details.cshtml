@@ -1,0 +1,12 @@
+@model DetailedViewItem
+
+<p class="name">
+    @Model.Name
+</p>
+<span>Links:</span>
+<div class="links">
+    @foreach (var link in Model.Links)
+    {
+        <a href="@link" style="display: block;">{link}</a>
+    }
+</div>
