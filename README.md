@@ -4,7 +4,7 @@
 Good day programmers.
 This is my first program on ASP.NET what does things what i expect from it.
 It's point is to show some statistic information on chart + table  where you can download any data.
-It was made in 2days, so it's code is probably bad, but I dont will not change anything rn, just after some time will come here and learn my mistakes one more time
+It was made in 2days, so it's code is probably bad, but I will not change anything rn, just after some time will come here and learn my mistakes one more time
 ## Realisation
 I used only 2 things here: ASP.NET, React
 Now i know that it's not a very a good idea, but when I made this project it was the best and fast solution.
