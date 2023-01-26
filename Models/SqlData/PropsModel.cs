@@ -1,5 +1,3 @@
-using System;
-
 namespace DriveHack.Site.Models
 {
     public class PropsModel

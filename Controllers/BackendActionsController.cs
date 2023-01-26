@@ -1,6 +1,6 @@
-using System.Text;
 using DriveHack.Site.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Text;
 
 namespace DriveHack.Site.Controllers
 {

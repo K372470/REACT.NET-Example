@@ -1,11 +1,10 @@
-using System.Net;
 using DriveHack.Site.Models;
 using JavaScriptEngineSwitcher.Extensions.MsDependencyInjection;
 using JavaScriptEngineSwitcher.V8;
 using Microsoft.EntityFrameworkCore;
 using React.AspNet;
+using System.Net;
 
-//new Thread(new ThreadStart(DataBaseFiller.Start)).Start();
 
 var builder = WebApplication.CreateBuilder();
 #region  Services

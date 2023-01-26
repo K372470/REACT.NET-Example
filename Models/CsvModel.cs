@@ -1,6 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
-
 namespace DriveHack.Site.Models
 {
     public class CsvModel
