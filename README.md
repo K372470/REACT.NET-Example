@@ -1,40 +1,44 @@
-# ASP.NET statistic service
+# ASP.NET project
 
-## Description 
-Good day programmers.
-This is my first program on ASP.NET what does things what i expect from it.
-It's point is to show some statistic information on chart + table  where you can download any data.
-It was made in 2days, so it's code is probably bad, but I will not change anything rn, just after some time will come here and learn my mistakes one more time
-## Realisation
-I used only 2 things here: ASP.NET, React
-Now i know that it's not a very a good idea, but when I made this project it was the best and fast solution.
-Anyway it looks like this combination did it's job good enought
+## Description
+Good afternoon programmers. This is my first program in ASP.NET and it is the first program that does exactly what I expect it to do.
+The main task is to show some statistical information in the form of charts and tables.
+From the program you can download any data for a selected period in the form of csv.
+The program was made in 2 days, so the code is probably bad, but I will not change anything now, just after a while come back to the project and analyze it for mistakes.
+
+
+## Implementation
+Stack contains only 2 technologies here: ASP.NET and React
+It's not the best solution, but when I made this project it was the best and fast solution.
 
 ### ASP.NET
-As you can imagine in this project, I used ASP.NET Core with Model-View-Controller scheme.
+In this project, I used ASP.NET MVC as backend solution
 So my structure:
 #### Controllers
-> *HomeController.cs* - needed to tell server "hey, load pages for me"
+> *HomeController.cs* - Needed to get pages from the server
 
-> *BackendActionsController.cs* - Something WEB-API like. It takes data from Entity Framework by Linq expressions
+> *BackendActionsController.cs* - Something like WEB-API. It takes data from Entity Framework by Linq expressions
 
 #### Models
-Everything inside "SqlData" folder is related to SQL databases, so i'll not mention it, just know what we had 2databases:
-With "Id - Name" scheme and "Id\_From\_PreviousDB - description - link ..." - it seemed a good and popular solution
-##### Actual models
-> *CSV model* - used only on server, to build CSV file easier and faster
+Everything inside "SqlData" folder is related to SQL databases
+We had two SQL Databses:
+> 1) There are only 2 columns: Id and Object-Name
 
-> *StartView* - used on startPage, each class contains information about dataObject with it's ID
+> 2) There are 3 columns: Id as rowId, startId to match with previous table, URL to the object in the internet
 
-> *DetailedView* - used to show links to founded objects
+Since each object can have many URLs
+
+> *CSV model* - used as helping structure to build CSV file easier and faster
+
+> *StartView* - used on startPage, each model-class contains information about dataObject (It's ID, Name and URLs count)
+
+> *DetailedView* - used on detailedPage, each model-class contains detailed information about dataObject
 
 #### Views
-Views here aren't for real interesting, just some html and css formating + "model ..." in razorDocument
+There are some razor documents, with html formating, wich purpose is to inject react-related scripts and set base formating
 
 ### React
-In that category, that was my first project too, connecting libraries was really painful...
-Btw, now after finishing some amount of small React Projects, i think, that was my mistake...
-On front I used only 2 libraries: 
+On frontend I used only 2 libraries: 
 > [chart.JS](https://www.chartjs.org/) for fast and simple graphics
 
 > [bootstrap](https://getbootstrap.com/) only for some styles
@@ -43,9 +47,7 @@ On front I used only 2 libraries:
 [That Library](https://github.com/reactjs/React.NET) I found in the E-Net by googling "Asp.Net updating page"
 I used it 2-3 times, in views, where it did it's startup job
 #### Babel & Webpack
-> AAAAAAAAH PAIN
-
-But without jokes, i just set it up by watching tutorials for [React.NET](https://github.com/reactjs/React.NET), nothing interesting, bcs now I usualy use other compilators
+It Was set up by watching tutorials for [React.NET](https://github.com/reactjs/React.NET), nothing interesting
 #### Scripts
 Nothing special, some simple things:
 > *script.jsx* - calling server for data
