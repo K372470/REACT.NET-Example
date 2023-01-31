@@ -47,9 +47,9 @@ On frontend I used only 2 libraries:
 [That Library](https://github.com/reactjs/React.NET) I found in the E-Net by googling "Asp.Net updating page"
 I used it 2-3 times, in views, where it did it's startup job
 #### Babel & Webpack
-It Was set up by watching tutorials for [React.NET](https://github.com/reactjs/React.NET), nothing interesting
+I set up it up by watching tutorials for [React.NET](https://github.com/reactjs/React.NET), nothing interesting
 #### Scripts
-Nothing special, some simple things:
+Some simple things:
 > *script.jsx* - calling server for data
 
 > *dataViewers.jsx* - contains chart.JS and table constructors
