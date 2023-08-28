@@ -1,7 +1,12 @@
 # ASP.NET project
 
 ## Description
-Good afternoon programmers. This is my first program in ASP.NET and it is the first program that does exactly what I expect it to do.
+Good afternoon programmers.
+</br>
+<details>
+<summary>This is my first program in REACT.NET and this is the first program that does exactly what I expect it to do.</summary>
+(using REACT.NET is kind of painful, too hard to use any react dependency: 3/10 would not do it again)
+</details>
 The main task is to show some statistical information in the form of charts and tables.
 From the program you can download any data for a selected period in the form of csv.
 The program was made in 2 days, so the code is probably bad, but I will not change anything now, just after a while come back to the project and analyze it for mistakes.
